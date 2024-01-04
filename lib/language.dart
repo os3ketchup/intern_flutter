@@ -13,6 +13,7 @@ extension ExtStr on String {
   }
 }
 
+
 //auth and splash
 String enter = 'enter';
 String enterPhone = 'enter_phone';

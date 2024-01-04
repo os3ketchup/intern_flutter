@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/src/ui/apptheme.dart';
 import 'package:learning/util_variables.dart';
 
 class EmptyCardScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _EmptyCardScreenState extends State<EmptyCardScreen> {
       ),
       SizedBox(
         width: 150.o,
-        child: const Text(
+        child:  Text(
           'У вас нету добавленных карт',
           textAlign: TextAlign.center,
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -29,9 +30,10 @@ class _EmptyCardScreenState extends State<EmptyCardScreen> {
       ),
       SizedBox(
         width: 200.o,
-        child: const Text(
+        child:  Text(
           'Пожалуста добавьте карту для пожертвование',
-          textAlign: TextAlign.center,
+        textAlign: TextAlign.justify,
+          style: theme.textStyle,
         ),
       ),
       SizedBox(

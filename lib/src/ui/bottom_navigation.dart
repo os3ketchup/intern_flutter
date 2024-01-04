@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:learning/util_variables.dart';
 
-class BottomNavBarExample extends StatefulWidget {
-  const BottomNavBarExample({super.key});
+class HomeBottomNavBar extends StatefulWidget {
+  const HomeBottomNavBar({super.key});
 
   @override
-  _BottomNavBarExampleState createState() => _BottomNavBarExampleState();
+   _HomeBottomNavBarState createState() => _HomeBottomNavBarState();
 }
 
-class _BottomNavBarExampleState extends State<BottomNavBarExample> {
-  int selectedIndex = 0; // Variable to track the selected index
+class _HomeBottomNavBarState extends State<HomeBottomNavBar> {
+   int selectedIndex = 0; // Variable to track the selected index
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _BottomNavBarExampleState extends State<BottomNavBarExample> {
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.1.o), // Shadow color
-              spreadRadius: 2,
+              spreadRadius: 2.o,
               blurRadius: 4,
               offset:  Offset(0.o, -2.o), // Shadow position
             ),

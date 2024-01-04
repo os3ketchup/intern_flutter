@@ -73,15 +73,15 @@ class ExistCardScreen extends StatelessWidget {
                           onUpdate(index);
                         print('$index clicked !!!');
                       },
-                      child: const Row(
+                      child:  Row(
                         children: [
                           Icon(
                             Icons.delete,
-                            color: Colors.red,
+                            color: theme.red,
                           ),
                           Text(
                             'Удалить',
-                            style: TextStyle(color: Colors.red),
+                            style: TextStyle(color: theme.red),
                           )
                         ],
                       ),
@@ -91,13 +91,6 @@ class ExistCardScreen extends StatelessWidget {
               ],
             ),
           );
-          //   ListTile(
-          //   title: Text(currentItem.number),
-          //   subtitle: Text(
-          //       'Age: ${currentItem.age}, Location: ${currentItem.cvc}'),
-          //   // You can customize the ListTile according to your requirements
-          //   // For example, you can add leading, trailing icons, etc.
-          // );
         },
       ),
     );

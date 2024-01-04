@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 import '../../util_variables.dart';
@@ -104,5 +106,17 @@ class _ThemeApp {
   ColorFilter greyFilter = ColorFilter.mode(
     isDark ? const Color(0xFFABA5B0) : const Color(0xFF7D7B77),
     BlendMode.srcIn,
+  );
+
+  AppBar get appbar => AppBar(
+  title: Text('Подтверждение'),
+    toolbarHeight: 0,
+    elevation: 0,
+    backgroundColor: theme.primary,
+    systemOverlayStyle: SystemUiOverlayStyle(
+      statusBarColor: theme.primary,
+      statusBarIconBrightness: Brightness.dark,
+      statusBarBrightness: Brightness.light,
+    ),
   );
 }

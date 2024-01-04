@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/src/ui/apptheme.dart';
 import 'package:learning/util_variables.dart';
 
 class CustomDialog extends StatelessWidget {
@@ -23,18 +24,18 @@ class CustomDialog extends StatelessWidget {
           children: <Widget>[
             Icon(
               Icons.credit_score,
-              color: Colors.deepPurple,
+              color: theme.primary,
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             const Text(
               'Карта успешно \n добавлена!',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 24.0),
+            const SizedBox(height: 24.0),
             Container(
               width: 200.o,
-              decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10.o)),color: Colors.yellow),
+              decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(10.o)),color: theme.yellow),
               child: TextButton(
                 onPressed: () {
                   Navigator.of(context).pop();
